@@ -1,0 +1,247 @@
+//
+// Dark Theme Fixes
+//
+
+@gray: #333;
+@red: #a61717;
+@tope: #fcf4dc;
+@pink: #e6bbfb;
+@green: #4a993e;
+@lightblue: #8bf;
+@purple: #332faa;
+
+ul.filter-list a.filter-item.selected,
+.filter-item.selected span.count,
+.minibutton:hover:not(.selected),
+.minibutton:hover:not(.selected) *,
+.minibutton:hover:not(.selected) .octicon,
+.navigation-focus .select-menu-item-icon.octicon,
+.navigation-focus .select-menu-item-text,
+div.select-menu-modal .navigation-focus a.select-menu-item-text,
+.navigation-focus h4,
+.navigation-focus:not(.starred-repo) .description,
+a.feed:hover,
+a.feed:hover span,
+.state-merged,
+.orgs-nav .org-nav-item .count,
+.box-action:hover .octicon,
+.box-action:active .octicon,
+.gh-header-status .octicon,
+.pagination a:hover,
+.gollum-minibutton a:hover,
+.tabnav-widget .minibutton:hover,
+.state-indicator.merged,
+.github-reviewer-blockLabels > li,
+.release .release-label a,
+.setup-header ol *,
+.setup-secondary *,
+.comparison-list li,
+ul.filter-list a.filter-item.selected span.name,
+ul.filter-list a.filter-item.selected .octicon,
+section p em,
+a.js-details-target:hover {
+  color: @gray !important;
+}
+
+a,
+button,
+div,
+p,
+ul,
+li,
+#gollum-editor-submit,
+dl.form label,
+.formbody label,
+.js-context-button,
+.footer-text,
+.minibutton span,
+span.name,
+.diff-line-code,
+.num,
+.button,
+.user-list em,
+.auth-form-header h1,
+.oauth-stats dl.keys dd,
+.range .branch-name,
+.gh-header-actions .minibutton:hover:not(.selected),
+.css-truncate:hover .css-truncate-target,
+.octicon-repo-forked.mega-octicon::before,
+.news .alert .octicon,
+.tabnav-tabs a:hover,
+a.tabnav-tab.selected,
+.mp em,
+.mp var,
+.minibutton.new-repo:hover,
+.minibutton.new-repo:hover .octicon,
+.pagination a:hover,
+.navigation-focus h4,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:hover > .octicon,
+.issue-list em {
+  color: @tope !important;
+}
+
+.repo-list-item .repo-description {
+  color: @lightblue !important;
+}
+
+.octicon-lock.mega-octicon::before {
+  color: @purple !important;
+}
+
+.octicon-repo.mega-octicon::before {
+  color: @pink !important;
+}
+
+.select-menu-item.selected > .octicon {
+  color: green !important;
+}
+
+#manpage .mp,
+.dropdown-menu,
+li.session-device,
+.select-menu-modal,
+.commandbar .display,
+.boxed-group-list > li:hover,
+#notification-center li.unread,
+.explore-section:nth-child(even),
+li.session-device.session-current,
+.auto-search-group .search-filters,
+.git-notes-content {
+  background: #111 !important;
+}
+
+.gh-header-meta,
+.gh-header-show,
+.timeline-comment {
+  background: #222 !important;
+}
+
+.box-action:hover,
+.box-action:active {
+  background: @pink !important;
+}
+
+section,
+.timeline-commits td,
+.discussion-bubble-inner,
+#notification-center li:hover,
+.chromed-list-browser .none p,
+.chromed-list-browser .error p {
+  background: transparent !important;
+}
+
+.comment-form-head.tabnav,
+div.pull-head .pull-description .pull-head-meta,
+#notification-center li.unread:hover,
+div.pull-head .pull-description p,
+.timeline-comment-header,
+.new-discussion-timeline .branch-action-body,
+ul.filter-list .filter-item:not(.selected):hover,
+.discussion-timeline:before {
+  background-color: @gray !important;
+}
+
+.private .repo-list-item {
+  background-color: @purple !important;
+}
+
+.highlight .err {
+  background-color: @red !important;
+}
+
+.gh-header-actions .minibutton.js-details-target,
+.gh-header-actions .minibutton.js-details-target:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+  background-image: linear-gradient(rgb(40, 40, 40), rgb(24, 24, 24)) !important;
+}
+
+.team,
+.org-header,
+.team-members,
+.index .header-bg,
+.index .masonry #header,
+.org-sidebar .simple-box,
+.org-sidebar .org-add-footer,
+.thread-subscription-status,
+.discussion-timeline-actions,
+.email-format .email-hidden-toggle a {
+  border: none !important;
+  background: transparent !important;
+}
+
+.timeline-comment,
+.timeline-comment-wrapper>.timeline-comment:before,
+.timeline-new-comment .timeline-comment:before,
+.new-discussion-timeline .closed-banner,
+.notifications .list-group-item {
+  border: none !important;
+}
+
+.new-discussion-timeline .discussion-item-icon,
+.timeline-comment-wrapper,
+.discussion-sidebar-item+.discussion-sidebar-item,
+.gh-header-meta {
+  border-color: @gray !important;
+}
+
+.button.primary:not(:disabled):hover {
+  border-color: @green !important;
+}
+
+.dropdown-arrow,
+.select-menu .select-menu-button:hover::before {
+  border-top-color: #ccc !important;
+}
+
+.select-menu-button:hover::before,
+.select-menu .select-menu-button:hover::before {
+  border-top-color: @gray !important;
+}
+
+.timeline-comment-wrapper>.timeline-comment:after,
+.timeline-new-comment .timeline-comment:after {
+  border-right-color: @gray !important;
+}
+
+.dropdown-menu:after {
+  border-bottom-color: #111 !important;
+}
+
+.timeline-comment-header {
+  border-bottom: 1px solid #111 !important;
+}
+
+.markdown-body hr {
+  border-bottom: 1px solid #ccc !important;
+}
+
+.new-discussion-timeline .branch-action-body:before {
+  border-right: 0 !important;
+}
+
+.timeline-comment-avatar {
+  border-radius: 0 !important;
+}
+
+.select-menu-modal-holder {
+  z-index: 999 !important;
+}
+
+.oauth-section span.label {
+  text-shadow: none !important;
+}
+
+.github-omnibox-sidebar-item .octicon img,
+.github-reviewer-blockLabels > li {
+  transition: none !important;
+  -webkit-transition: none !important;
+}
+
+.index .site-logo img,
+.inbox-zero-octocat img,
+.spinner,
+.Octocat-spinner-64,
+.page-context-loader img {
+  -webkit-filter: invert(87%) !important;
+}

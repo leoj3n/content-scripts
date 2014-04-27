@@ -1,0 +1,38 @@
+@media (max-width: 733px) {
+
+  .min_width {
+    min-width: 712px !important;
+  }
+
+  #content,
+  .content,
+  .container,
+  .player_container,
+  #footers_footer,
+  #brozar_toggle_wrapper {
+    width: auto !important;
+  }
+
+  #cols .col_large,
+  #cols .col_small {
+    float: none !important;
+    margin-right: 0 !important;
+    width: auto !important;
+  }
+
+  #cols .col_small,
+  #site_footer,
+  #comments {
+    padding: 25px !important;
+  }
+
+  #search_form #search_holder input[type="text"] {
+    width: 166px !important;
+  }
+
+  #footers_footer,
+  #footer_tip {
+    display: none !important;
+  }
+
+}

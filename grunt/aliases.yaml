@@ -1,0 +1,13 @@
+debug:
+    - 'newer:jshint'
+    - 'connect:chrome'
+    - 'watch'
+
+build:
+    - 'newer:clean'
+    - 'newer:less'
+    - 'concat'
+
+default:
+    - 'newer:jshint'
+    - 'build'

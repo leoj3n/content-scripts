@@ -1,0 +1,13 @@
+@media (max-width: 733px) {
+
+  #content #page,
+  #package .details section {
+    margin-right: 0 !important;
+  }
+
+  #content,
+  #footer {
+    width: auto !important;
+  }
+
+}

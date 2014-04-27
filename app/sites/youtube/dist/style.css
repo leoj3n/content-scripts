@@ -1,0 +1,98 @@
+.yt-masthead-user-icon {
+  position: relative;
+  z-index: 9999 !important;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 15s linear infinite;
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+#yt-masthead-user-displayname {
+  color: darkorange !important;
+  font-weight: bold !important;
+}
+#watch7-headline {
+  background: url(chrome-extension://__MSG_@@extension_id__/images/web@2x.png) 100.2% -0.03809523809523809px 34px no-repeat !important;
+}
+#watch-discussion {
+  border: 0 !important;
+}
+@media (max-width: 733px) {
+  #yt-masthead .yt-masthead-logo-container {
+    width: auto !important;
+    margin-right: 32px !important;
+  }
+  #yt-masthead-container,
+  #footer-container {
+    min-width: 1px !important;
+  }
+  #body-container {
+    overflow: hidden;
+  }
+  .site-left-aligned #page {
+    width: auto !important;
+    min-width: 1px !important;
+  }
+  #watch-sidebar,
+  .branded-page-v2-secondary-col {
+    display: none !important;
+  }
+  .feeds-mode .yt-shelf-grid-item {
+    width: 142px !important;
+  }
+  #watch7-content {
+    width: 472px !important;
+  }
+  #player,
+  #watch7-main {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+  #watch7-main #watch7-sidebar {
+    margin: 0 !important;
+    height: 292px !important;
+    overflow: scroll !important;
+    padding-top: 10px !important;
+  }
+  .watch-sidebar {
+    min-width: 1px !important;
+    max-width: none !important;
+  }
+  .share-panel-url {
+    width: auto !important;
+  }
+  #player-api,
+  #action-panel-details,
+  .action-panel-content {
+    width: auto !important;
+  }
+  #comments-test-iframe,
+  #comments-test-iframe iframe {
+    zoom: reset !important;
+    overflow: auto !important;
+  }
+  #watch7-secondary-actions .yt-uix-button {
+    margin-left: 0 !important;
+  }
+  body.site-left-aligned .sb-card {
+    right: 295px !important;
+  }
+  #yt-masthead-container {
+    margin-bottom: 0 !important;
+    background: #f4f4f4 !important;
+  }
+  .site-left-aligned.flex-width-enabled #page {
+    margin-right: 0 !important;
+  }
+  .yt-lockup.yt-lockup-tile {
+    max-width: 512px !important;
+  }
+  .branded-page-v2-primary-col .branded-page-box-padding {
+    padding: 15px !important;
+  }
+}

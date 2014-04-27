@@ -1,0 +1,23 @@
+/* Make developer.chrome.com responsive... */
+
+@media (max-width: 733px) {
+
+  #gc-pagecontent {
+    padding-left:10px;
+    margin-left:0 !important;
+  }
+
+  #gc-sidebar {
+    z-index:999;
+    padding:0 10px;
+    margin-left:-210px;
+    position:fixed !important;
+    /*display:none !important;*/
+    background: whitesmoke !important;
+  }
+
+  #gc-sidebar:hover {
+    margin-left:-50px !important;
+  }
+
+}

@@ -1,0 +1,35 @@
+@media (max-width: 700px) {
+
+  /*
+  http://productforums.google.com/d/msg/chrome/7GbJngPI6Lg/GwZNNlveBAMJ
+   */
+
+  /*html {
+    zoom: 87% !important;
+  }*/
+
+}
+
+@media (min-width: 722px) {
+
+/*html {
+    zoom: 113% !important;
+  }*/
+
+}
+
+@media (min-width: 1600px) {
+
+  /*html {
+    zoom: 150% !important;
+  }*/
+
+}
+
+.vimiumHUD {
+  height: 24px !important;
+  color: #FCF4DC !important;
+  font-size: 18px !important;
+  background: #6C2570 !important;
+  box-sizing: content-box !important;
+}

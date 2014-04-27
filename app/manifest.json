@@ -1,0 +1,136 @@
+{
+    "name": "Content Scripts",
+    "version": "0.0.0",
+    "manifest_version": 2,
+    "description": "A chrome extension to inject my custom scripts.",
+    "icons": {
+        "16": "images/icon-16.png",
+        "128": "images/icon-128.png"
+    },
+    "background": {
+        "scripts": [
+            "scripts/chromereload.js",
+            "scripts/background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "scripts/contentscript.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": false
+        },
+        {
+            "matches": ["<all_urls>"],
+            "css": ["sites/global/global.css"]
+        },
+        {
+            "matches": [
+                "http://*.ruby-doc.org/*",
+                "https://*.ruby-doc.org/*"
+            ],
+            "css": ["sites/ruby-doc/app/assets/css/style.css"]
+        },
+        {
+            "matches": [
+                "http://*.github.com/*",
+                "https://*.github.com/*"
+            ],
+            "css": ["sites/github/dist/style.css"],
+            "js":[
+                "sites/global/jquery-2.1.0.min.js",
+                "sites/github/dist/github-timeline/github-timeline.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://gist.github.com/*",
+                "https://gist.github.com/*"
+            ],
+            "css": ["sites/gist_github/app/assets/css/style.css"]
+        },
+        {
+            "matches": [
+                "http://*.bitbucket.org/*",
+                "https://*.bitbucket.org/*"
+            ],
+            "css": ["sites/bitbucket/app/assets/css/style.css"]
+        },
+        {
+            "matches": [
+                "http://*.nodejs.org/*",
+                "https://*.nodejs.org/*"
+            ],
+            "css": ["sites/nodejs/app/assets/css/style.css"]
+        },
+        {
+            "matches": [
+                "http://*.npmjs.org/*",
+                "https://*.npmjs.org/*"
+            ],
+            "css": ["sites/npmjs/app/assets/css/style.css"]
+        },
+        {
+            "matches": [
+                "http://*.vimeo.com/*",
+                "https://*.vimeo.com/*"
+            ],
+            "css": ["sites/vimeo/app/assets/css/style.css"]
+        },
+        {
+            "matches": [
+                "http://*.youtube.com/*",
+                "https://*.youtube.com/*"
+            ],
+            "css": ["sites/youtube/dist/style.css"]
+        },
+        {
+            "matches": [
+                "http://*.twitter.com/*",
+                "https://*.twitter.com/*"
+            ],
+            "css": ["sites/twitter/app/assets/css/style.css"]
+        },
+        {
+            "matches": [
+                "http://*.grooveshark.com/*",
+                "https://*.grooveshark.com/*"
+            ],
+            "css": ["sites/grooveshark/app/assets/css/style.css"]
+        },
+        {
+            "matches": [
+                "http://*.asana.com/*",
+                "https://*.asana.com/*"
+            ],
+            "css": ["sites/asana/app/assets/css/style.css"]
+        },
+        {
+            "matches": [
+                "http://developer.chrome.com/*",
+                "https://developer.chrome.com/*"
+            ],
+            "css": ["sites/developer_chrome/app/assets/css/style.css"]
+        },
+        {
+            "matches": [
+                "http://stackoverflow.com/*",
+                "https://stackoverflow.com/*"
+            ],
+            "css": ["sites/stackoverflow/app/assets/css/style.css"]
+        }
+    ],
+    "web_accessible_resources": [
+        "*"
+    ],
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ]
+}

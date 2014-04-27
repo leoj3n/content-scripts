@@ -1,0 +1,86 @@
+/* Twitter */
+
+.profile-picture.media-thumbnail {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: spin 15s linear infinite;
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotateZ(0deg); }
+  to { -webkit-transform: rotateZ(360deg); }
+}
+
+.header-inner {
+  background: url(chrome-extension://__MSG_@@extension_id__/images/web@2x.png)
+    no-repeat white 101% -5px / 42.5px 46px !important;
+}
+
+.current-user a,
+.screen-name {
+  color: darkorange !important;
+}
+
+@media (max-width: 733px) {
+
+  #page-container.wrapper,
+  html,
+  body {
+    width: auto !important;
+    max-width: 732px !important;
+  }
+
+  html {
+    padding-top: 0 !important;
+  }
+  body.user-profile {
+    padding-top: 40px !important;
+  }
+
+  .content-main,
+  .profile-card.profile-header,
+  .profile-header-inner-overlay {
+    width: 500px !important;
+  }
+
+  .dashboard {
+    width: 167px !important;
+  }
+
+  .dashboard .module {
+    width: 165px !important;
+  }
+
+  .media-box .media-thumbnail img,
+  .media-box .media-thumbnail {
+    width: 68px !important;
+    height: 68px !important;
+  }
+
+  form.tweet-form .toolbar {
+    zoom: 56% !important;
+  }
+
+  .mini-profile .js-mini-profile-stats-container,
+  .mini-profile .profile-summary {
+    zoom: 80% !important;
+  }
+
+  #tweet-box-mini-home-profile,
+  #tweet-box-profile {
+    width:122px !important;
+  }
+
+  .enhanced-mini-profile .mini-profile .profile-summary {
+    background-size: cover !important;
+  }
+
+  .mini-profile .js-mini-profile-stats li:last-child,
+  .dashboard .component:first-child i.chev-right,
+  .enhanced-media-thumbnails a.list-link,
+  .tweet-box-title,
+  .site-footer,
+  .wtf-module {
+    display: none !important;
+  }
+
+}

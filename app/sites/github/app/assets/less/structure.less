@@ -1,0 +1,433 @@
+//=============================================================================
+// Global structure
+//=============================================================================
+
+//
+// Get rid of colored bar under title header
+//
+
+.gh-header-meta {
+  margin-top: 0 !important;
+  padding-top: 9px !important;
+}
+
+//
+// Make comment nipples touch their boxes
+//
+
+.timeline-comment-wrapper > .timeline-comment:after,
+.timeline-comment-wrapper > .timeline-comment:before,
+.timeline-new-comment .timeline-comment:after,
+.timeline-new-comment .timeline-comment:before {
+  left: -15px !important;
+}
+
+//
+// Add space between comment buttons and textarea
+//
+
+.form-actions .button {
+  margin-top: 10px !important;
+}
+
+//
+// Fix SVG tip offset
+//
+
+.svg-tip {
+  margin-top: -6px !important;
+  margin-left: -12px !important;
+}
+
+.svg-tip.n:after {
+  top: 95% !important;
+}
+
+//
+// Make sure participation graph is below everything else
+//
+
+.participation-graph {
+  z-index: -999 !important;
+}
+
+//=============================================================================
+// Responsiveness
+//=============================================================================
+
+@media (max-width: 733px) {
+
+  .wrapper,
+  .frames,
+  .frame,
+  .site,
+  html,
+  body {
+    margin: 0 !important;
+    width: 730px !important;
+    min-width: inherit !important;
+    max-width: inherit !important;
+  }
+
+  .container {
+    /*margin: 0 !important;*/
+    width: 712px !important;
+  }
+  #site-container > .container:first-child {
+    margin-top: 20px !important;
+    margin-left: 10px !important;
+  }
+
+  #js-repo-pjax-container,
+  .empty-repo {
+    width: 662px !important;
+  }
+
+  .header {
+    min-width: inherit !important;
+  }
+
+  .header-logo-invertocat {
+    margin-left: -2px !important;
+  }
+
+  .top-nav {
+    width:100px !important;
+  }
+
+  div.site {
+    padding-right: none !important;
+  }
+
+  .repolist {
+    overflow: hidden !important;
+  }
+
+  .repository-sidebar {
+    width:37px !important;
+  }
+  .repository-sidebar .full-word,
+  .clone-url input,
+  .clone-options,
+  .clone-url h3 {
+    display: none !important;
+  }
+  .clone-url {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .js-zeroclipboard {
+    border: none !important;
+    background: none !important;
+  }
+
+  //
+  // Disable sticky discussion sidebar
+  //
+
+  .discussion-sidebar {
+    position: static !important;
+  }
+
+  #slider,
+  .column-main,
+  .vcard-detail,
+  .setup-header,
+  .setup-wrapper {
+    width: inherit !important;
+  }
+
+  .column-main,
+  .column-sec {
+    float: none !important;
+    margin-left: 0 !important;
+  }
+
+  .pagehead .container > ul.tabs {
+    font-weight: normal !important;
+  }
+
+  .kill-the-chrome .container {
+    padding-right: 0 !important;
+  }
+
+  .pagehead h1,
+  .breadcrumb {
+    font-size: 16px !important;
+  }
+
+  #js-new-comment-form-actions .tip,
+  .top-nav li:nth-child(2),
+  .top-nav li:nth-child(3),
+  .subscriptions-sidebar,
+  #footer-push,
+  #footer,
+  #logout {
+    display: none !important;
+  }
+
+  .vcard {
+    min-height: 230px;
+    width: 100% !important;
+  }
+  .avatared a[itemprop="image"],
+  .avatared .tooltipped {
+    right: 0;
+    position: absolute;
+  }
+  .avatared .details,
+  .avatared h1,
+  .stats,
+  .orgs {
+    zoom: 62%;
+  }
+  .org-profile .profilecols .last {
+    width: 100% !important;
+    float: left !important;
+  }
+
+  .org .container {
+    position: relative !important;
+  }
+
+  .org-main {
+    margin-top: 250px !important;
+  }
+
+  .org-sidebar {
+    top: 0;
+    left: 0;
+    float: none !important;
+    width: auto !important;
+    margin-top: 0 !important;
+    position: absolute !important;
+  }
+
+  .org-module.simple-box {
+    float: left;
+  }
+
+  .members {
+    max-width: 434px;
+  }
+
+  .member-row {
+    float: left;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-bottom: none !important;
+  }
+
+  .member-name,
+  .member-fullname {
+    display: none !important;
+  }
+
+  .member-row .member-avatar {
+    width: 59px !important;
+    height: 59px !important;
+    margin-right: 5px !important;
+  }
+
+  .org-add-footer {
+    clear: both;
+  }
+
+  .js-calendar-graph {
+    zoom: 98%;
+  }
+
+  .stars-browser .filter-bar ul.repo_filterer {
+    margin-top: 12px;
+    position: static !important;
+  }
+
+  .last,
+  #files .new-commit,
+  .discussion-timeline,
+  body.page-profile .profilecols .filter-bar .filter_input {
+    width: auto !important;
+  }
+
+  #notification-center .listings-layout .columns.main {
+    width: 520px !important;
+  }
+
+  .pull-request-composer .discussion-topic,
+  .subscriptions-content,
+  .repo-settings-content {
+    width: 100% !important;
+  }
+
+  #network {
+    overflow: scroll;
+  }
+
+  table.files td.message .css-truncate {
+    max-width: 333px !important;
+  }
+
+  .commit-title {
+    max-width: 497px;
+  }
+
+  .clone-urls {
+    width: 377px !important;
+  }
+
+  .facebox-content,
+  .facebox .shortcuts {
+    width: auto !important;
+  }
+
+  #facebox {
+    left: auto !important;
+  }
+
+  .popular-repos .single-column .repo-list-item .repo-description {
+    max-width: 592px !important;
+  }
+
+  .in-repository #code_search input,
+  #code_search input,
+  .codesearch-head #adv_code_search .search-page-label {
+    width: 80% !important;
+  }
+
+  .command-bar-focus.in-repository .command-bar-form {
+    width: 437px !important;
+  }
+
+  .command-bar.in-repository .command-bar-form {
+    width: 312px;
+  }
+
+  .contribution-pulls-list .contribution-pull-info {
+    float: none !important;
+  }
+
+  .settings-nav {
+    width: 215px !important;
+  }
+
+  .settings-content {
+    width: 482px !important;
+  }
+
+  .discussion-sidebar {
+    float: none !important;
+    width: auto !important;
+    /*overflow: auto !important;*/
+  }
+
+  .discussion-sidebar ul.changes li {
+    display: none !important; /* "inline" to show */
+    float: left !important;
+    padding-right: 25px !important;
+  }
+
+  .discussion-labels ul.color-label-list li {
+    float: left !important;
+    margin-left: 2px !important;
+  }
+
+  ul.color-label-list {
+    overflow: auto !important;
+    display: inline !important;
+  }
+
+  .label-manager {
+    display: inline !important;
+  }
+
+  .discussion-sidebar.github-reviewer--stick {
+    position: inherit !important;
+    margin-left: inherit !important;
+  }
+
+  .repository-sidebar.github-reviewer--stick {
+    left: auto !important;
+    right: 10px !important;
+    margin-left: inherit !important;
+  }
+
+  .discussion-sidebar .state-indicator,
+  .github-reviewer-blockLabels {
+    display: none !important;
+  }
+
+  .discussion-sidebar .label-manager .select-menu {
+    /*width: auto !important;*/
+    float: left !important;
+    display: inline !important;
+    margin-top: -25px !important;
+    position: inherit !important;
+  }
+
+  .discussion-sidebar .label-manager .select-menu-modal-holder {
+    right: auto !important;
+  }
+
+  .discussion-sidebar strong {
+    display: none !important;
+  }
+
+  .thread-subscription-status p.reason {
+    font-size: 12px !important;
+  }
+
+  .news,
+  .dashboard-sidebar,
+  .carousel-wrapper,
+  .featured-collection-carousel .carousel-slide {
+    float: none !important;
+    width: auto !important;
+  }
+
+  .carousel-wrapper {
+    overflow: scroll !important;
+  }
+
+  .explore-page .select-menu-modal {
+    width: auto !important;
+  }
+
+  #parallax_illustration {
+    width: auto !important;
+  }
+
+  div.pull-head .pull-description p {
+    max-width: 423px !important;
+  }
+
+  div.pull-head .pull-description p:hover {
+    max-width: 700px !important;
+    background: #333 !important;
+    position: absolute !important;
+  }
+
+  .state {
+    margin-right: 10px !important;
+  }
+
+  .news .avatar-container a {
+    font-size: 15px !important;
+  }
+
+  .news .alert .css-truncate.css-truncate-target,
+  .news .alert .css-truncate .css-truncate-target {
+    max-width: 262px !important;
+  }
+
+  .byline .gist.gist-item .creator {
+    color: white !important;
+  }
+
+  .new-discussion-timeline .sidebar-notifications .thread-subscription-status .thread-subscription-help,
+  .discussion-sidebar-item .select-menu .button-link {
+    right: 5px !important;
+    position: absolute !important;
+  }
+
+}

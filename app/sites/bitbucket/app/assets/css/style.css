@@ -1,0 +1,68 @@
+@media (max-width: 733px) {
+
+  #page,
+  .center-content {
+    min-width: 712px !important;
+  }
+
+  .aui-navgroup-horizontal .aui-navgroup-inner,
+  #repo-header .repo-summary.with-repo-watch,
+  .center-content,
+  .aui-header-inner,
+  #repo-admin-nav,
+  #page {
+    width: auto !important;
+  }
+
+  .repo-summary h1 {
+    font-size: 16px !important;
+  }
+
+  #repo-overview > .column {
+    width: 687px !important;
+  }
+
+  #content {
+    width: 712px !important;
+  }
+
+  .aui-popup {
+    zoom: 88% !important;
+  }
+
+  #repo-tabs {
+    font-size: 14px !important;
+  }
+
+  #repo-stats {
+    margin-top: 25px !important;
+  }
+
+  .aui-navgroup-horizontal.aui-navgroup-horizontal-roomy .aui-nav a {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .admin-layout .main > section {
+    width: 100% !important;
+  }
+
+  #repo-admin-nav {
+    width: 112px !important;
+  }
+
+  #advanced-search {
+    position: relative;
+    right: -210px;
+  }
+
+  .aui-quicksearch {
+    padding: 0 !important;
+  }
+
+  #primary {
+    float: none !important;
+    width: 100% !important;
+  }
+
+}

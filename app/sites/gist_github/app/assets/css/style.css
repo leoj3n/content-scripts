@@ -1,0 +1,35 @@
+@media (max-width: 733px) {
+
+  #top_search_form {
+    width: auto !important;
+  }
+
+  .topsearch .top-nav {
+    left: 260px !important;
+    width: 212px !important;
+  }
+
+  .column,
+  .root-pane {
+    float: none !important;
+    width: auto !important;
+    clear: both !important;
+  }
+
+  .menu-container {
+    width: 45% !important;
+    float: left !important;
+  }
+
+  .export-references,
+  ul.filter-list {
+    width: 45% !important;
+    float: right !important;
+    margin-top: 0 !important;
+  }
+
+  .export-references input.url-field {
+    width: 95%;
+  }
+
+}

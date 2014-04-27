@@ -1,0 +1,143 @@
+/* Grooveshark */
+
+#profile-button img {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 15s linear infinite;
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotateZ(0deg); }
+  to { -webkit-transform: rotateZ(360deg); }
+}
+
+#profile-button a {
+  color: darkorange !important;
+}
+
+#page-content {
+  background: url(chrome-extension://__MSG_@@extension_id__/images/web@2x.png)
+    no-repeat white 100.3% -3px / 42.5px 46px !important;
+}
+
+@media (max-width: 2px) {
+
+  /* Page */
+
+  html {
+    zoom: 70% !important;
+  }
+  #stage {
+    top: 48px !important;
+  }
+  #page {
+    overflow: hidden;
+    min-width: inherit !important;
+  }
+  #page-wrapper {
+    padding-top: 0 !important;
+  }
+  #page-content {
+    width: inherit !important;
+    padding: 0 20px !important;
+  }
+  #page-header {
+    background: transparent !important;
+  }
+  #page-header.main .inner {
+    width: 100% !important;
+  }
+
+  /* Player */
+
+  #now-playing {
+    right: 10px !important;
+  }
+  #player-options {
+    top: -48px;
+    height: 40px;
+    padding: 0 10px;
+    background: #333;
+  }
+  .module-row.tall.song.is-playing .title {
+    max-width: 214px !important;
+  }
+
+  /* Column 1 */
+
+  #column1 {
+    width: 520px !important;
+  }
+  #suggestions-grid .meta-inner,
+  #suggestions-grid .title {
+    max-width: 290px !important;
+  }
+  #column1 .share-box .share-box-content .widget-code {
+    width: 466px !important;
+  }
+  #column1 .share-box .btn.third-party .text {
+    width: 72px !important;
+  }
+  #column1 #comment-submit,
+  #column1 .white-bg {
+    width: 408px !important;
+  }
+  #column1 .comment-input {
+    width: 384px !important;
+  }
+  #top-playlists-grid,
+  #user-profile-grid {
+    overflow: auto !important;
+  }
+
+  /* Column 2 */
+
+  #column2 {
+    width: 250px !important;
+  }
+  .column2-tab {
+    width: 100px !important;
+  }
+  .snapshot .module-row.tall .metadata .meta-inner,
+  .snapshot .module-row.tall .metadata .title,
+  .snapshot .module-row.tall .metadata {
+    width: 180px !important;
+  }
+
+  /* Chat */
+
+  .bc-chat-container {
+    top: 90px !important;
+    width: 250px !important;
+    height: 70% !important;
+    position: fixed !important;
+    background: white !important;
+  }
+  .bc-chat-messages-container {
+    top: 0 !important;
+  }
+  .chat-activity.chat-message .inner {
+    width:  auto !important;
+  }
+  .chat-message .user-name {
+    overflow: hidden;
+    width: 157px !important;
+  }
+  #column2 .comment-input {
+    width: 100px !important;
+  }
+  #column2 .bc-chat-input {
+    width: 125px !important;
+  }
+
+  /* Hidden Elements */
+
+  .bc-chat-form-container .placeholder-text,
+  .form-placeholder-comments,
+  .first-comment-message,
+  #social-digest,
+  #jh-feedback,
+  #bc-share {
+    display: none !important;
+  }
+
+}

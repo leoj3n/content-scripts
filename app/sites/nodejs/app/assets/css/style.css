@@ -1,0 +1,32 @@
+@media (max-width: 733px) {
+
+  #intro {
+    display: none !important;
+  }
+
+  #content {
+    width: auto !important;
+  }
+
+  #column2.interior li a {
+    background: white !important;
+  }
+
+  #column1.interior,
+  #column2.interior {
+    width: auto !important;
+    float: none !important;
+    margin: 0 25px !important;
+    padding-right: 0 !important;
+  }
+
+  #footer {
+    width: auto !important;
+    padding: 0 25px !important;
+  }
+
+  #footer ul {
+    margin-right: 0 !important;
+  }
+
+}

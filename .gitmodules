@@ -1,0 +1,3 @@
+[submodule "app/sites/github/dist/github-timeline"]
+	path = app/sites/github/dist/github-timeline
+	url = git://github.com/MyKiwi/github-timeline.git
