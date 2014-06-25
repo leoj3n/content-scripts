@@ -49,7 +49,10 @@
     width: 564px !important;
   }
   #player,
-  #watch7-main {
+  #watch7-main,
+  #player-api,
+  #action-panel-details,
+  .action-panel-content {
     width: 100% !important;
     min-width: 100% !important;
   }
@@ -59,16 +62,17 @@
     overflow: scroll !important;
     padding-top: 10px !important;
   }
+  #watch7-main #watch7-sidebar:hover {
+    z-index: 999 !important;
+    height: 100% !important;
+    position: relative !important;
+    background-color: white !important;
+  }
   .watch-sidebar {
     min-width: 1px !important;
     max-width: none !important;
   }
   .share-panel-url {
-    width: auto !important;
-  }
-  #player-api,
-  #action-panel-details,
-  .action-panel-content {
     width: auto !important;
   }
   #comments-test-iframe,

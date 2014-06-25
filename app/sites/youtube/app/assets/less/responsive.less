@@ -58,7 +58,10 @@
   }
 
   #player,
-  #watch7-main {
+  #watch7-main,
+  #player-api,
+  #action-panel-details,
+  .action-panel-content {
     width: 100% !important;
     min-width: 100% !important;
   }
@@ -68,6 +71,13 @@
     height: 292px !important;
     overflow: scroll !important;
     padding-top: 10px !important;
+
+    &:hover {
+      z-index: 999 !important;
+      height: 100% !important;
+      position: relative !important;
+      background-color: white !important;
+    }
   }
 
   .watch-sidebar {
@@ -76,12 +86,6 @@
   }
 
   .share-panel-url {
-    width: auto !important;
-  }
-
-  #player-api,
-  #action-panel-details,
-  .action-panel-content {
     width: auto !important;
   }
 
