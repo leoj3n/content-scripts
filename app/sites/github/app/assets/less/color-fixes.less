@@ -236,7 +236,7 @@ ul.filter-list .filter-item:not(.selected):hover,
 .github-reviewer-blockLabels > li {
   transition: none !important;
   -webkit-transition: none !important;
-}
+}*/
 
 .index .site-logo img,
 .inbox-zero-octocat img,
@@ -244,8 +244,25 @@ ul.filter-list .filter-item:not(.selected):hover,
 .Octocat-spinner-64,
 .page-context-loader img {
   -webkit-filter: invert(87%) !important;
-}*/
+}
+
+.blob-num,
+.blob-code,
+kbd {
+  color: gray !important;
+}
+
+td[style*="background-color: rgb(248, 238, 199);"] {
+    background-color: rgba(248, 238, 199, 0.2) !important;
+}
 
 .file-wrap {
     border-color: magenta !important;
+}
+
+.select-menu-button:after {
+    border: 0 !important;
+    content: "▾" !important;
+    vertical-align: 0 !important;
+    margin-right: 4px !important;
 }
