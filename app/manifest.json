@@ -117,7 +117,7 @@
                 "http://stackoverflow.com/*",
                 "https://stackoverflow.com/*"
             ],
-            "css": ["sites/stackoverflow/app/assets/css/style.css"]
+            "css": ["sites/stackoverflow/dist/style.css"]
         }
     ],
     "web_accessible_resources": [

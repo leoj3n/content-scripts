@@ -1,6 +1,10 @@
 /* Make Stack Overflow responsive... */
 
-@media (max-width: 733px) {
+@media (max-width: 825px) { /* 733 */
+
+  html {
+      min-width: 800px !important;
+  }
 
   .question-summary,
   #question-header,
@@ -20,13 +24,21 @@
   #hmenus,
   .answer {
     /*overflow: hidden;*/
-    width:702px !important;
-    min-width:702px !important;
-    max-width:702px !important;
+    width: 800px !important;
+    min-width: 800px !important;
+    max-width: 800px !important;
+  }
+
+  .topbar {
+      width: 823px !important;
+  }
+
+  .topbar .topbar-wrapper {
+      width: 800px !important;
   }
 
   .question-summary.narrow .summary {
-    width:512px !important;
+    width: 604px !important;
   }
 
   #header #topbar {
@@ -35,12 +47,12 @@
   }
 
   .summary {
-    width: 608px !important;
+    width: 700px !important;
   }
 
   .post-text {
-    width: 662px !important;
-    min-width: 662px !important;
+    width: 754px !important;
+    min-width: 754px !important;
   }
 
   .question-status {
@@ -64,3 +76,5 @@
   }
 
 }
+
+
