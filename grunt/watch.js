@@ -8,16 +8,6 @@ module.exports = {
             livereload: true
         }
     },
-    gruntfile: {
-        files: [
-            'Gruntfile.js',
-            'grunt/*.js'
-        ],
-        tasks: ['default'],
-        options: {
-            livereload: true
-        }
-    },
     styles: {
         files: [
             '<%= config.app %>/sites/**/assets/**/*.css'
@@ -33,6 +23,17 @@ module.exports = {
             'newer:less',
             'concat'
         ],
+        options: {
+            livereload: true
+        }
+    },
+    configs: {
+        files: [
+            'Gruntfile.js',
+            'grunt/*.js',
+            '<%= config.app %>/manifest.json'
+        ],
+        tasks: ['default'],
         options: {
             livereload: true
         }
