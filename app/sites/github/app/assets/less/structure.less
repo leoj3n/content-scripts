@@ -64,11 +64,14 @@
   html,
   body {
     margin: 0 !important;
-    width: 822px !important;
+    width: 823px !important;
     min-width: inherit !important;
     max-width: inherit !important;
   }
 
+  .columns {
+    margin: 0 !important;
+  }
   .container {
     /*margin: 0 !important;*/
     width: 804px !important;
@@ -133,6 +136,7 @@
 
   .discussion-sidebar {
     position: static !important;
+    margin-bottom: 25px !important;
   }
 
   #slider,
@@ -250,8 +254,8 @@
   }
 
   .last,
+  .table-list,
   #files .new-commit,
-  .discussion-timeline,
   body.page-profile .profilecols .filter-bar .filter_input {
     width: auto !important;
   }
@@ -273,6 +277,10 @@
 
   table.files td.message .css-truncate {
     max-width: 425px !important;
+  }
+
+  .file {
+      z-index: 0;
   }
 
   .commit-title {
