@@ -32,10 +32,7 @@
             "css": ["sites/ruby-doc/app/assets/css/style.css"]
         },
         {
-            "matches": [
-                "http://*.github.com/*",
-                "https://*.github.com/*"
-            ],
+            "matches": [ "*://*.github.com/*" ],
             "css": ["sites/github/dist/style.css"],
             "js":[
                 "sites/global/jquery-2.1.0.min.js",
@@ -43,80 +40,47 @@
             ]
         },
         {
-            "matches": [
-                "http://gist.github.com/*",
-                "https://gist.github.com/*"
-            ],
+            "matches": [ "*://gist.github.com/*" ],
             "css": ["sites/gist_github/app/assets/css/style.css"]
         },
         {
-            "matches": [
-                "http://*.bitbucket.org/*",
-                "https://*.bitbucket.org/*"
-            ],
+            "matches": [ "*://*.bitbucket.org/*" ],
             "css": ["sites/bitbucket/app/assets/css/style.css"]
         },
         {
-            "matches": [
-                "http://*.nodejs.org/*",
-                "https://*.nodejs.org/*"
-            ],
+            "matches": [ "*://*.nodejs.org/*" ],
             "css": ["sites/nodejs/app/assets/css/style.css"]
         },
         {
-            "matches": [
-                "http://*.npmjs.org/*",
-                "https://*.npmjs.org/*"
-            ],
+            "matches": [ "*://*.npmjs.org/*" ],
             "css": ["sites/npmjs/app/assets/css/style.css"]
         },
         {
-            "matches": [
-                "http://*.vimeo.com/*",
-                "https://*.vimeo.com/*"
-            ],
+            "matches": [ "*://*.vimeo.com/*" ],
             "css": ["sites/vimeo/app/assets/css/style.css"]
         },
         {
-            "matches": [
-                "http://*.youtube.com/*",
-                "https://*.youtube.com/*"
-            ],
+            "matches": [ "*://*.youtube.com/*" ],
             "css": ["sites/youtube/dist/style.css"]
         },
         {
-            "matches": [
-                "http://*.twitter.com/*",
-                "https://*.twitter.com/*"
-            ],
+            "matches": [ "*://*.twitter.com/*" ],
             "css": ["sites/twitter/app/assets/css/style.css"]
         },
         {
-            "matches": [
-                "http://*.grooveshark.com/*",
-                "https://*.grooveshark.com/*"
-            ],
+            "matches": [ "*://*.grooveshark.com/*" ],
             "css": ["sites/grooveshark/app/assets/css/style.css"]
         },
         {
-            "matches": [
-                "http://*.asana.com/*",
-                "https://*.asana.com/*"
-            ],
+            "matches": [ "*://*.asana.com/*" ],
             "css": ["sites/asana/app/assets/css/style.css"]
         },
         {
-            "matches": [
-                "http://developer.chrome.com/*",
-                "https://developer.chrome.com/*"
-            ],
+            "matches": [ "*://developer.chrome.com/*" ],
             "css": ["sites/developer_chrome/app/assets/css/style.css"]
         },
         {
-            "matches": [
-                "http://stackoverflow.com/*",
-                "https://stackoverflow.com/*"
-            ],
+            "matches": [ "*://stackoverflow.com/*" ],
             "css": ["sites/stackoverflow/dist/style.css"]
         }
     ],
