@@ -8,7 +8,7 @@
   to { -webkit-transform: rotateZ(360deg); }
 }
 
-#user-links .name {
+.header .name span {
   color: darkorange !important;
 }
 
@@ -16,5 +16,7 @@ div.commit-tease {
   background-size: 31.5px 34px !important;
   background-repeat: no-repeat !important;
   background-position: 100.1% -3px !important;
-  background-image: url(chrome-extension://__MSG_@@extension_id__/github/app/assets/img/web@2x.png) !important;
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/web@2x.png) !important;
 }
+
+

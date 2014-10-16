@@ -1,13 +1,22 @@
 module.exports = {
     js: {
-        files: ['<%= config.app %>/scripts/{,*/}*.js'],
+        files: [
+            '<%= config.app %>/scripts/{,*/}*.js'
+        ],
         tasks: ['jshint'],
         options: {
             livereload: true
         }
     },
     gruntfile: {
-        files: ['Gruntfile.js']
+        files: [
+            'Gruntfile.js',
+            'grunt/*.js'
+        ],
+        tasks: ['default'],
+        options: {
+            livereload: true
+        }
     },
     styles: {
         files: [

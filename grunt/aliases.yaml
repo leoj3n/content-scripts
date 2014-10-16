@@ -4,6 +4,7 @@ debug:
     - 'watch'
 
 build:
+    - 'run'
     - 'newer:clean'
     - 'newer:less'
     - 'concat'

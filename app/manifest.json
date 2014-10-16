@@ -19,9 +19,7 @@
                 "http://*/*",
                 "https://*/*"
             ],
-            "js": [
-                "scripts/contentscript.js"
-            ],
+            "js": [ "scripts/contentscript.js" ],
             "run_at": "document_end",
             "all_frames": false
         },
@@ -30,10 +28,7 @@
             "css": ["sites/global/global.css"]
         },
         {
-            "matches": [
-                "http://*.ruby-doc.org/*",
-                "https://*.ruby-doc.org/*"
-            ],
+            "matches": [ "*://*.ruby-doc.org/*" ],
             "css": ["sites/ruby-doc/app/assets/css/style.css"]
         },
         {
@@ -130,6 +125,8 @@
     ],
     "permissions": [
         "tabs",
+        "webRequest",
+        "webRequestBlocking",
         "http://*/*",
         "https://*/*"
     ]
