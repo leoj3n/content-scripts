@@ -4,3 +4,6 @@
 [submodule "app/sites/github/app/GitHub-Dark"]
 	path = app/sites/github/app/GitHub-Dark
 	url = https://github.com/StylishThemes/GitHub-Dark.git
+[submodule "app/sites/youtube/app/YouTube-Dark"]
+	path = app/sites/youtube/app/YouTube-Dark
+	url = https://github.com/StylishThemes/YouTube-Dark.git

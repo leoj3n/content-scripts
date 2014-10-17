@@ -7,6 +7,13 @@ module.exports = {
         ],
         dest: '<%= config.app %>/sites/github/dist/style.css'
     },
+//    youtube: {
+//        src: [
+//            '<%= config.app %>/sites/youtube/app/YouTube-Dark/stylesheets/youtube-dark.css',
+//            '<%= config.app %>/sites/youtube/dist/style.css'
+//        ],
+//        dest: '<%= config.app %>/sites/youtube/dist/style.css'
+//    },
     stackoverflow: {
         src: [
             '<%= config.app %>/sites/stackoverflow/app/assets/css/structure.css'
