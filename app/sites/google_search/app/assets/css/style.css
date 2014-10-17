@@ -1,0 +1,45 @@
+/* Google Search */
+
+.gb_La.gb_7.gb_Kc.gb_f {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: spin 15s linear infinite;
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotateZ(0deg); }
+  to { -webkit-transform: rotateZ(360deg); }
+}
+
+#hdtbSum {
+  background: url(chrome-extension://__MSG_@@extension_id__/images/web@2x.png)
+    no-repeat white 100.5% -5px / 42.5px 46px !important;
+}
+
+@media (max-width: 825px) {
+
+    #cnt {
+        zoom: 98%;
+    }
+
+    #hdtb_msb .hdtb_mitem:first-child.hdtb_msel {
+        margin-left: 20px !important;
+    }
+
+    #gb,
+    #top_nav,
+    #appbar,
+    #rhscol,
+    #fbar {
+        min-width: 500px !important;
+    }
+
+    .mw #rhs {
+        margin-left: 535px !important;
+    }
+
+    #center_col {
+        margin-left: 0px !important;
+    }
+}
+
+
