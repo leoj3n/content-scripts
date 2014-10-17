@@ -1,6 +1,6 @@
-[submodule "app/sites/github/dist/github-timeline"]
-	path = app/sites/github/dist/github-timeline
-	url = git://github.com/MyKiwi/github-timeline.git
 [submodule "app/sites/github/app/GitHub-Dark"]
 	path = app/sites/github/app/GitHub-Dark
 	url = https://github.com/StylishThemes/GitHub-Dark.git
+[submodule "app/sites/github/app/github-timeline"]
+	path = app/sites/github/app/github-timeline
+	url = https://github.com/romqin/github-timeline.git

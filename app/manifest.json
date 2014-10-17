@@ -36,7 +36,7 @@
             "css": ["sites/github/dist/style.css"],
             "js":[
                 "sites/global/jquery-2.1.0.min.js",
-                "sites/github/dist/github-timeline/github-timeline.js"
+                "sites/github/dist/github-timeline.js"
             ]
         },
         {
