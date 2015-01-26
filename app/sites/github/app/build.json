@@ -1,11 +1,10 @@
 {
-   "color": "#008080",
-   "tab": 4,
-   "chrome": true,
-   "attach": "scroll",
-   "tiled": true,
-   "image": "url(https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/images/backgrounds/bg-tile1.png)",
-   "theme": "Solarized-Dark"
+  "color": "#FF8C00",
+  "tab": 2,
+  "chrome": true,
+  "attach": "scroll",
+  "tiled": true,
+  "image": "url(https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/images/backgrounds/bg-tile1.png)",
+  "theme": "Solarized-Dark"
 }
-
 

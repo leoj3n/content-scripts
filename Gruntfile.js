@@ -2,29 +2,29 @@
 
 module.exports = function( grunt ) {
 
-    //
-    // Time how long tasks take
-    //
+  //
+  // Time how long tasks take
+  //
 
-    require('time-grunt')(grunt);
+  require('time-grunt')(grunt);
 
-    //
-    // Configurable paths
-    //
+  //
+  // Configurable paths
+  //
 
-    var config = {
-        app: 'app',
-        manifest: grunt.file.readJSON('app/manifest.json')
-    };
+  var config = {
+    app: 'app',
+    manifest: grunt.file.readJSON('app/manifest.json')
+  };
 
-    //
-    // Load grunt tasks automatically
-    //
+  //
+  // Load grunt tasks automatically
+  //
 
-    require('load-grunt-config')( grunt, {
-        data: {
-            config: config
-        }
-    });
+  require('load-grunt-config')( grunt, {
+    data: {
+      config: config
+    }
+  });
 
 };
