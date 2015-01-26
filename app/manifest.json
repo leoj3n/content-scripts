@@ -72,10 +72,6 @@
             "css": ["sites/grooveshark/app/assets/css/style.css"]
         },
         {
-            "matches": [ "*://*.asana.com/*" ],
-            "css": ["sites/asana/app/assets/css/style.css"]
-        },
-        {
             "matches": [ "*://*.google.com/search?*" ],
             "css": ["sites/google_search/app/assets/css/style.css"]
         },
