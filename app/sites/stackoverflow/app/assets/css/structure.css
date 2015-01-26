@@ -1,6 +1,6 @@
 /* Make Stack Overflow responsive... */
 
-@media (max-width: 825px) { /* 733 */
+@media (max-width: 833px) {
 
   html {
       min-width: 800px !important;
