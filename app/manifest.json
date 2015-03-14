@@ -68,10 +68,6 @@
             "css": ["sites/twitter/app/assets/css/style.css"]
         },
         {
-            "matches": [ "*://*.grooveshark.com/*" ],
-            "css": ["sites/grooveshark/app/assets/css/style.css"]
-        },
-        {
             "matches": [ "*://*.google.com/search?*" ],
             "css": ["sites/google_search/app/assets/css/style.css"]
         },
