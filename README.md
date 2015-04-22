@@ -20,6 +20,10 @@ Navigate to local folder
 
 ### Developing
 
+Checkout submodules with `git submodule --init`
+
+Install dependencies with `npm install`.
+
 To compile a single change, run `grunt build`.
 
 For a grunt watch task and livereload of current Chrome tab, run `grunt debug`.
