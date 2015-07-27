@@ -20,7 +20,7 @@ Navigate to local folder
 
 ### Developing
 
-Checkout submodules with `git submodule --init`
+Checkout submodules with `git submodule init`
 
 Install dependencies with `npm install`.
 
