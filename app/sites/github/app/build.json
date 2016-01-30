@@ -1,10 +1,10 @@
 {
-  "theme"    : "idle-fingers",
+  "theme"    : "tomorrow-night-bright",
   "color"    : "#FF8C00",
   "font"     : "Menlo",
   "image"    : "url(https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/images/backgrounds/bg-tile1.png)",
   "tiled"    : true,
-  "codeWrap" : false,
+  "codeWrap" : true,
   "attach"   : "scroll",
   "tab"      : 2,
   "webkit"   : true
