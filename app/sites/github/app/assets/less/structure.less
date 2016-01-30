@@ -20,6 +20,7 @@
   .frames,
   .frame,
   .site,
+  .repohead,
   html,
   body {
     margin: 0 !important;
@@ -46,11 +47,6 @@
 
   .js-upload-avatar-image .column.two-thirds {
     width: 100% !important;
-  }
-
-  #js-repo-pjax-container,
-  .empty-repo {
-    width: 754px !important;
   }
 
   .header {
@@ -101,8 +97,28 @@
   //
 
   .discussion-sidebar {
+    overflow: auto !important;
     position: static !important;
     margin-bottom: 25px !important;
+  }
+
+  .discussion-sidebar-item {
+
+    float: left !important;
+    margin-top: 0 !important;
+    border-top: 0 !important;
+    margin-right: 15px !important;
+
+    &.sidebar-notifications {
+
+      max-width: 125px !important;
+
+      .reason {
+        display: none !important;
+      }
+
+    }
+
   }
 
   #slider,
