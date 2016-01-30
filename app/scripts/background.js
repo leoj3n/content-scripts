@@ -18,6 +18,7 @@ chrome.tabs.getSelected( null, function( tab ) {
 // Disable CSP on GitHub
 //
 
+/* jk: causing problems in 2016
 chrome.webRequest.onHeadersReceived.addListener(function(details) {
   for (var i = 0; i < details.responseHeaders.length; i++) {
     if (details.responseHeaders[i].name.toUpperCase() === 'CONTENT-SECURITY-POLICY') {
@@ -35,4 +36,5 @@ chrome.webRequest.onHeadersReceived.addListener(function(details) {
   urls: [ '*://*.github.com/*' ],
   types: [ 'main_frame', 'sub_frame', 'stylesheet', 'script', 'image', 'object', 'xmlhttprequest', 'other' ]
 }, [ 'blocking', 'responseHeaders' ]);
+*/
 
