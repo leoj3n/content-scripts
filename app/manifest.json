@@ -33,12 +33,15 @@
             "css": ["sites/ruby-doc/app/assets/css/style.css"]
         },
         {
-            "matches": [ "*://*.github.com/*" ],
-            "css": ["sites/github/dist/style.css"],
+            "matches": [ "https://github.com/" ],
             "js":[
                 "sites/global/jquery-2.1.0.min.js",
                 "sites/github/dist/github-timeline.js"
             ]
+        },
+        {
+            "matches": [ "*://*.github.com/*" ],
+            "css": ["sites/github/dist/style.css"]
         },
         {
             "matches": [ "*://gist.github.com/*" ],
