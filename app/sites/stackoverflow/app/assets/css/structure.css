@@ -37,42 +37,25 @@
       width: 800px !important;
   }
 
-  .question-summary.narrow .summary {
-    width: 604px !important;
-  }
-
-  #header #topbar {
-    padding: 0 !important;
-    padding-top: 5px !important;
-  }
-
-  .summary {
-    width: 700px !important;
-  }
-
   .post-text {
-    width: 754px !important;
-    min-width: 754px !important;
-  }
-
-  .question-status {
-    width: auto !important;
+    width: 747px !important;
+    min-width: 747px !important;
   }
 
   .container {
     padding-left:7px;
   }
 
-  div#custom-header,
-  #herobox-mini,
-  #hero-content,
-  #footer-flair,
-  #copyright {
-    display:none !important;
+  #header,
+  #footer,
+  #sidebar,
+  .bottom-notice,
+  #feed-link {
+    display: none !important;
   }
 
-  #herobox-mini {
-    overflow: auto;
+  #content {
+    padding: 0 !important;
   }
 
 }
