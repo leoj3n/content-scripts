@@ -30,8 +30,9 @@ For a grunt watch task and livereload of current Chrome tab, run `grunt debug`.
 
 ### Prolonged development
 
-Because I need to tweak these files at a moments notice, I use [katon](https://github.com/typicode/katon) to persist the watch task: 
+Because I need to tweak these files at a moments notice, I use [hotel](https://github.com/typicode/hotel) to persist the watch task: 
 
-`katon link 'grunt debug'`
+`hotel add -n content-scripts "grunt debug"`
 
-In the case that I need to see task output, I just `tail katon.log`.
+From this repo's directory.
+
