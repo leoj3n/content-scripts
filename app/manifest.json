@@ -25,7 +25,8 @@
         },
         {
             "matches": ["<all_urls>"],
-            "css": ["sites/global/global.css"]
+            "css": ["sites/global/global.css"],
+            "js": ["sites/global/global.js"]
         },
         {
             "matches": [ "*://*.ruby-doc.org/*" ],
