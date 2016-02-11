@@ -1,97 +1,103 @@
 {
-    "name": "Content Scripts",
+  "name": "Content Scripts",
     "version": "0.0.0",
     "manifest_version": 2,
     "description": "A chrome extension to inject my custom scripts.",
     "icons": {
-        "16": "images/icon-16.png",
-        "128": "images/icon-128.png"
+      "16": "images/icon-16.png",
+      "128": "images/icon-128.png"
+    },
+    "browser_action": {
+      "default_icon": {
+        "19": "images/reload-gray-19.png",
+        "38": "images/reload-gray-38.png"
+      },
+      "default_title": "Click to start listening for changes via websocket"
     },
     "background": {
-        "scripts": [
-            "scripts/chromereload.js",
-            "scripts/background.js"
+      "scripts": [
+        "scripts/background.js"
         ]
     },
     "content_scripts": [
-        {
-            "matches": [
-                "http://*/*",
-                "https://*/*"
-            ],
-            "js": [ "scripts/contentscript.js" ],
-            "run_at": "document_end",
-            "all_frames": false
-        },
-        {
-            "matches": ["<all_urls>"],
-            "css": ["sites/global/global.css"],
-            "js": ["sites/global/global.js"]
-        },
-        {
-            "matches": [ "*://*.ruby-doc.org/*" ],
-            "css": ["sites/ruby-doc/app/assets/css/style.css"]
-        },
-        {
-            "matches": [ "https://github.com/" ],
-            "js":[
-                "sites/global/jquery-2.1.0.min.js",
-                "sites/github/dist/github-timeline.js"
-            ]
-        },
-        {
-            "matches": [ "*://*.github.com/*" ],
-            "css": ["sites/github/dist/style.css"]
-        },
-        {
-            "matches": [ "*://gist.github.com/*" ],
-            "css": ["sites/gist_github/app/assets/css/style.css"]
-        },
-        {
-            "matches": [ "*://*.bitbucket.org/*" ],
-            "css": ["sites/bitbucket/app/assets/css/style.css"]
-        },
-        {
-            "matches": [ "*://*.nodejs.org/*" ],
-            "css": ["sites/nodejs/app/assets/css/style.css"]
-        },
-        {
-            "matches": [ "*://*.npmjs.org/*" ],
-            "css": ["sites/npmjs/app/assets/css/style.css"]
-        },
-        {
-            "matches": [ "*://*.vimeo.com/*" ],
-            "css": ["sites/vimeo/app/assets/css/style.css"]
-        },
-        {
-            "matches": [ "*://*.youtube.com/*" ],
-            "css": ["sites/youtube/dist/style.css"]
-        },
-        {
-            "matches": [ "*://*.twitter.com/*" ],
-            "css": ["sites/twitter/app/assets/css/style.css"]
-        },
-        {
-            "matches": [ "*://*.google.com/search?*" ],
-            "css": ["sites/google_search/app/assets/css/style.css"]
-        },
-        {
-            "matches": [ "*://developer.chrome.com/*" ],
-            "css": ["sites/developer_chrome/app/assets/css/style.css"]
-        },
-        {
-            "matches": [ "*://stackoverflow.com/*" ],
-            "css": ["sites/stackoverflow/dist/style.css"]
-        }
-    ],
-    "web_accessible_resources": [
-        "*"
-    ],
-    "permissions": [
-        "tabs",
-        "webRequest",
-        "webRequestBlocking",
+    {
+      "matches": [
         "http://*/*",
-        "https://*/*"
-    ]
+      "https://*/*"
+        ],
+      "js": [ "scripts/contentscript.js" ],
+      "run_at": "document_end",
+      "all_frames": false
+    },
+    {
+      "matches": ["<all_urls>"],
+      "css": ["sites/global/global.css"],
+      "js": ["sites/global/global.js"]
+    },
+    {
+      "matches": [ "*://*.ruby-doc.org/*" ],
+      "css": ["sites/ruby-doc/app/assets/css/style.css"]
+    },
+    {
+      "matches": [ "https://github.com/" ],
+      "js":[
+        "sites/global/jquery-2.1.0.min.js",
+      "sites/github/dist/github-timeline.js"
+        ]
+    },
+    {
+      "matches": [ "*://*.github.com/*" ],
+      "css": ["sites/github/dist/style.css"]
+    },
+    {
+      "matches": [ "*://gist.github.com/*" ],
+      "css": ["sites/gist_github/app/assets/css/style.css"]
+    },
+    {
+      "matches": [ "*://*.bitbucket.org/*" ],
+      "css": ["sites/bitbucket/app/assets/css/style.css"]
+    },
+    {
+      "matches": [ "*://*.nodejs.org/*" ],
+      "css": ["sites/nodejs/app/assets/css/style.css"]
+    },
+    {
+      "matches": [ "*://*.npmjs.org/*" ],
+      "css": ["sites/npmjs/app/assets/css/style.css"]
+    },
+    {
+      "matches": [ "*://*.vimeo.com/*" ],
+      "css": ["sites/vimeo/app/assets/css/style.css"]
+    },
+    {
+      "matches": [ "*://*.youtube.com/*" ],
+      "css": ["sites/youtube/dist/style.css"]
+    },
+    {
+      "matches": [ "*://*.twitter.com/*" ],
+      "css": ["sites/twitter/app/assets/css/style.css"]
+    },
+    {
+      "matches": [ "*://*.google.com/search?*" ],
+      "css": ["sites/google_search/app/assets/css/style.css"]
+    },
+    {
+      "matches": [ "*://developer.chrome.com/*" ],
+      "css": ["sites/developer_chrome/app/assets/css/style.css"]
+    },
+    {
+      "matches": [ "*://stackoverflow.com/*" ],
+      "css": ["sites/stackoverflow/dist/style.css"]
+    }
+  ],
+    "web_accessible_resources": [
+      "*"
+      ],
+    "permissions": [
+      "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/*",
+    "https://*/*"
+      ]
 }
