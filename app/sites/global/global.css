@@ -1,3 +1,15 @@
+#showtitlewrapper * {
+  color: black !important;
+  font-family: 'Pragmata Pro Mono', 'Georgia', serif;
+}
+
+#showtitlewrapper .link {
+  display: none;
+}
+#showtitlewrapper:hover .link {
+  display: inline-block !important;
+}
+
 @media (max-width: 700px) {
 
   /*
