@@ -1,37 +1,31 @@
 'use strict';
 
-chrome.runtime.onInstalled.addListener(function (details) {
-  console.log('previousVersion', details.previousVersion);
-  chrome.browserAction.onClicked.addListener(startReload);
-  startReload();
-});
-
 var connection;
 var LIVERELOAD_PORT = 35729;
-var LIVERELOAD_HOST = 'localhost:';
+var LIVERELOAD_HOST = 'localhost';
 function startReload (tab) {
   if (typeof connection !== 'undefined' && connection.readyState === 1) {
     connection.close();
   } else {
     try {
       connection = new WebSocket(
-          'ws://' + LIVERELOAD_HOST + LIVERELOAD_PORT + '/livereload'
+          'ws://' + LIVERELOAD_HOST + ':' + LIVERELOAD_PORT + '/livereload'
         );
 
-      connection.onopen = function (error) {
+      connection.onopen = function() {
         chrome.browserAction.setIcon({
           path : {
-            "19": "images/reload-green-19.png",
-            "38": "images/reload-green-38.png"
+            '19': 'images/reload-green-19.png',
+            '38': 'images/reload-green-38.png'
           }
         });
-      }
+      };
 
-      connection.onclose = function (error) {
+      connection.onclose = function() {
         chrome.browserAction.setIcon({
           path : {
-            "19": "images/reload-gray-19.png",
-            "38": "images/reload-gray-38.png"
+            '19': 'images/reload-gray-19.png',
+            '38': 'images/reload-gray-38.png'
           }
         });
       };
@@ -58,12 +52,30 @@ function startReload (tab) {
 }
 
 //
-// Reload current tab on extension (re)load
+// Reload most current normal tab on extension (re)load
 //
 
-chrome.tabs.getSelected( null, function( tab ) {
+chrome.tabs.getSelected( null, function ( tab ) {
   if (!tab.url.includes('chrome://') && !tab.url.includes('chrome-devtools://')) {
     chrome.tabs.reload(tab.id);
   }
+});
+
+//
+// Bootstrap reload functions
+//
+
+chrome.runtime.onInstalled.addListener(function() {
+  //
+  // Listen for button click
+  //
+
+  chrome.browserAction.onClicked.addListener(startReload);
+
+  //
+  // Try connecting to livereload on startup
+  //
+
+  startReload({ url: 'initial' });
 });
 

@@ -17,7 +17,8 @@
     "background": {
       "scripts": [
         "scripts/background.js"
-        ]
+        ],
+      "persistent": true
     },
     "content_scripts": [
     {
@@ -95,9 +96,8 @@
       ],
     "permissions": [
       "tabs",
-    "webRequest",
-    "webRequestBlocking",
-    "http://*/*",
-    "https://*/*"
-      ]
+      "alarms",
+      "http://*/*",
+      "https://*/*"
+    ]
 }
