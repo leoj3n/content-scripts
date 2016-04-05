@@ -1,10 +1,37 @@
+*::-webkit-scrollbar {
+  width: 4px !important;
+  height: 4px !important;
+}
+*::-webkit-scrollbar-track {
+  visibility: hidden !important;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 1px !important;
+  background-color: #F07746 !important;
+}
+
+#showtitlewrapper,
+.github-mate-panel {
+  box-sizing: content-box !important;
+  z-index: 9999999999 !important;
+  border-color: yellowgreen !important;
+  background: black !important;
+}
+
+#showtitlewrapper,
 #showtitlewrapper * {
-  color: black !important;
-  font-family: 'Pragmata Pro Mono', 'Georgia', serif;
+  line-height: 2 !important;
+  color: darkorange !important;
+}
+
+#showtitle-title,
+#showtitle-title .tolong {
+  font-family: 'Pragmata Pro Mono', 'Georgia', serif !important;
 }
 
 #showtitlewrapper .link {
   display: none;
+  font-family: ShowTitleFontAwesome !important;
 }
 #showtitlewrapper:hover .link {
   display: inline-block !important;

@@ -10,7 +10,8 @@ module.exports = {
     },
     styles: {
         files: [
-            '<%= config.app %>/sites/**/assets/**/*.css'
+            '<%= config.app %>/sites/**/assets/**/*.css',
+            '<%= config.app %>/sites/global/*.css'
         ],
         tasks: ['concat'],
         options: {

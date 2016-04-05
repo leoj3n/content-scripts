@@ -31,11 +31,6 @@
       "all_frames": false
     },
     {
-      "matches": ["<all_urls>"],
-      "css": ["sites/global/global.css"],
-      "js": ["sites/global/global.js"]
-    },
-    {
       "matches": [ "*://*.ruby-doc.org/*" ],
       "css": ["sites/ruby-doc/app/assets/css/style.css"]
     },
@@ -89,6 +84,11 @@
     {
       "matches": [ "*://stackoverflow.com/*" ],
       "css": ["sites/stackoverflow/dist/style.css"]
+    },
+    {
+      "matches": ["<all_urls>"],
+      "css": ["sites/global/global.css"],
+      "js": ["sites/global/global.js"]
     }
   ],
     "web_accessible_resources": [
