@@ -20,8 +20,35 @@ relative-time,
   color: greenyellow !important;
 }
 
-.file-wrap {
+.file-wrap,
+.tabnav,
+.tabnav-tab.selected,
+ul.border-gray-light,
+div.border-gray-light,
+div.border-top,
+div.border-left,
+div.border-right,
+div.border-bottom,
+.ic-toggle-option {
   border-color: greenyellow !important;
+}
+
+.ic-toggle-option:hover {
+  background-color: transparent !important;
+}
+
+.ic-toggle-option.active {
+  -webkit-filter: invert(100%);
+  border-color: #5200D0 !important;
+  background-color: #0073FF !important;
+}
+
+.ic-contributions-wrapper {
+  border: 1px solid greenyellow !important;
+}
+
+.contributions-setting.right {
+  right: 16px !important;
 }
 
 #gist-form .file .input textarea, .ace_editor, .ace_editor.ace-github-light, .blob-code, .file-data pre, .line-data, code, kbd:not(.badmono), pre, samp, tt {
