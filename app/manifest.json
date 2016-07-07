@@ -31,6 +31,10 @@
       "all_frames": false
     },
     {
+      "matches": [ "*://forums.donejs.com/*" ],
+      "css": ["sites/forums_donejs/app/assets/css/style.css"]
+    },
+    {
       "matches": [ "*://*.ruby-doc.org/*" ],
       "css": ["sites/ruby-doc/app/assets/css/style.css"]
     },
