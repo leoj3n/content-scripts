@@ -10,6 +10,8 @@ module.exports = {
     youtube: {
       files: {
         '<%= config.app %>/sites/youtube/dist/style.css': [
+          '<%= config.app %>/sites/youtube/app/assets/less/fun.less',
+          '<%= config.app %>/sites/youtube/app/assets/less/color-fixes.less',
           '<%= config.app %>/sites/youtube/app/assets/less/responsive.less'
         ]
       }

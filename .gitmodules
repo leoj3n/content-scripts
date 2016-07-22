@@ -4,3 +4,6 @@
 [submodule "app/sites/github/app/github-timeline"]
 	path = app/sites/github/app/github-timeline
 	url = https://github.com/romqin/github-timeline.git
+[submodule "app/sites/youtube/app/Dark-youtube-plugin-chrome"]
+	path = app/sites/youtube/app/Dark-youtube-plugin-chrome
+	url = https://github.com/stormbreakerbg/Dark-youtube-plugin-chrome.git

@@ -12,5 +12,12 @@ module.exports = {
             '<%= config.app %>/sites/stackoverflow/app/assets/css/structure.css'
         ],
         dest: '<%= config.app %>/sites/stackoverflow/dist/style.css'
+    },
+    youtube: {
+        src: [
+            '<%= config.app %>/sites/youtube/app/Dark-youtube-plugin-chrome/dark.css',
+            '<%= config.app %>/sites/youtube/dist/style.css'
+        ],
+        dest: '<%= config.app %>/sites/youtube/dist/style.css'
     }
 };
