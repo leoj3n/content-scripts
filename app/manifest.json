@@ -1,31 +1,31 @@
 {
   "name": "Content Scripts",
-    "version": "0.0.0",
-    "manifest_version": 2,
-    "description": "A chrome extension to inject my custom scripts.",
-    "icons": {
-      "16": "images/icon-16.png",
-      "128": "images/icon-128.png"
+  "version": "0.0.0",
+  "manifest_version": 2,
+  "description": "A chrome extension to inject my custom scripts.",
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/reload-gray-19.png",
+      "38": "images/reload-gray-38.png"
     },
-    "browser_action": {
-      "default_icon": {
-        "19": "images/reload-gray-19.png",
-        "38": "images/reload-gray-38.png"
-      },
-      "default_title": "Click to start listening for changes via websocket"
-    },
-    "background": {
-      "scripts": [
-        "scripts/background.js"
-        ],
-      "persistent": true
-    },
-    "content_scripts": [
+    "default_title": "Click to start listening for changes via websocket"
+  },
+  "background": {
+    "scripts": [
+      "scripts/background.js"
+    ],
+    "persistent": true
+  },
+  "content_scripts": [
     {
       "matches": [
         "http://*/*",
-      "https://*/*"
-        ],
+        "https://*/*"
+      ],
       "js": [ "scripts/contentscript.js" ],
       "run_at": "document_end",
       "all_frames": false
@@ -42,12 +42,13 @@
       "matches": [ "https://github.com/" ],
       "js":[
         "sites/global/jquery-2.1.0.min.js",
-      "sites/github/dist/github-timeline.js"
-        ]
+        "sites/github/dist/github-timeline.js"
+      ]
     },
     {
       "matches": [ "*://*.github.com/*" ],
-      "css": ["sites/github/dist/style.css"]
+      "css": ["sites/github/dist/style.css"],
+      "js":["sites/github/app/assets/js/script.js"]
     },
     {
       "matches": [ "*://gist.github.com/*" ],
@@ -95,13 +96,11 @@
       "js": ["sites/global/global.js"]
     }
   ],
-    "web_accessible_resources": [
-      "*"
-      ],
-    "permissions": [
-      "tabs",
-      "alarms",
-      "http://*/*",
-      "https://*/*"
-    ]
+  "web_accessible_resources": [ "*" ],
+  "permissions": [
+    "tabs",
+    "alarms",
+    "http://*/*",
+    "https://*/*"
+  ]
 }
