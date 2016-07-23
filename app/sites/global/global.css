@@ -12,16 +12,16 @@
 
 #showtitlewrapper,
 .github-mate-panel {
-  box-sizing: content-box !important;
-  z-index: 9999999999 !important;
-  border-color: yellowgreen !important;
   background: black !important;
+  z-index: 2147483647 !important;
+  border-color: yellowgreen !important;
 }
 
 #showtitlewrapper,
 #showtitlewrapper * {
   line-height: 2 !important;
   color: darkorange !important;
+  box-sizing: content-box !important;
 }
 
 #showtitle-title,
@@ -45,22 +45,6 @@
 
   /*html {
     zoom: 87% !important;
-  }*/
-
-}
-
-@media (min-width: 722px) {
-
-/*html {
-    zoom: 113% !important;
-  }*/
-
-}
-
-@media (min-width: 1600px) {
-
-  /*html {
-    zoom: 150% !important;
   }*/
 
 }

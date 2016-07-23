@@ -1,7 +1,8 @@
 module.exports = {
     js: {
         files: [
-            '<%= config.app %>/scripts/{,*/}*.js'
+            '<%= config.app %>/scripts/{,*/}*.js',
+            '<%= config.app %>/sites/**/assets/**/*.js'
         ],
         tasks: ['jshint'],
         options: {
