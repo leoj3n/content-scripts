@@ -87,7 +87,10 @@
       "css": ["sites/developer_chrome/app/assets/css/style.css"]
     },
     {
-      "matches": [ "*://stackoverflow.com/*" ],
+      "matches": [
+        "*://stackoverflow.com/*",
+        "*://superuser.com/*"
+      ],
       "css": ["sites/stackoverflow/dist/style.css"]
     },
     {
