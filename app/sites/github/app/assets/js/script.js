@@ -1,5 +1,5 @@
 //
-// Send Porter to bottom
+// Send Porter to bottom of page
 //
 
 var observer = new MutationObserver(function(mutations) {
@@ -14,8 +14,8 @@ var observer = new MutationObserver(function(mutations) {
 
 var observerConfig = {
 	childList: true,
+  subtree: true
 };
 
-var targetNode = document.getElementsByClassName('repository-content');
-observer.observe(targetNode[0], observerConfig);
+observer.observe(document.getElementById('js-repo-pjax-container'), observerConfig);
 

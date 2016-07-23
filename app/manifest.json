@@ -48,7 +48,7 @@
     {
       "matches": [ "*://*.github.com/*" ],
       "css": ["sites/github/dist/style.css"],
-      "js":["sites/github/app/assets/js/script.js"]
+      "js": ["sites/github/app/assets/js/script.js"]
     },
     {
       "matches": [ "*://gist.github.com/*" ],
