@@ -1,6 +1,6 @@
 /* Twitter */
 
-#user-dropdown-toggle {
+[data-testid="loggedInUserLink"] img {
     position: relative;
     -webkit-transform-style: preserve-3d;
     -webkit-animation: spin 15s linear infinite;
@@ -10,39 +10,8 @@
   to { -webkit-transform: rotateZ(360deg); }
 }
 
-.ProfileHeading .ProfileHeading-toggle {
+[aria-label="Timelines"] {
   background: url(chrome-extension://__MSG_@@extension_id__/images/web@2x.png)
     no-repeat white 101% -5px / 42.5px 46px !important;
 }
 
-@media (max-width: 833px) {
-
-    .home-tweet-box,
-    .wtf-module.has-content {
-        display: none !important;
-    }
-
-    .ProfilePage {
-        min-width: 700px !important;
-    }
-
-    .ProfileCanopy--large,
-    .ProfileCanopy--large .ProfileCanopy-header {
-        height: 240px !important;
-    }
-
-    .AppContainer {
-        margin: 0 !important;
-        max-width: 812px !important;
-    }
-
-
-    #doc .wrapper {
-        width: auto !important;
-    }
-
-    #doc .dashboard {
-        width: 198px !important;
-    }
-
-}

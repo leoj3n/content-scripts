@@ -1,4 +1,29 @@
 //
+// Fun
+//
+
+#user-links .name img {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 15s linear infinite;
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotateZ(0deg); }
+  to { -webkit-transform: rotateZ(360deg); }
+}
+
+.header .name span {
+  color: darkorange !important;
+}
+
+div.commit-tease {
+  background-size: 31.5px 34px !important;
+  background-repeat: no-repeat !important;
+  background-position: 100.1% -3px !important;
+  background-image: url(chrome-extension://__MSG_@@extension_id__/images/web@2x.png) !important;
+}
+
+//
 // Dark Theme Fixes
 //
 
@@ -53,5 +78,66 @@ div.border-bottom,
 
 #gist-form .file .input textarea, .ace_editor, .ace_editor.ace-github-light, .blob-code, .file-data pre, .line-data, code, kbd:not(.badmono), pre, samp, tt {
   font-family: 'Pragmata Pro Mono' !important;
+}
+
+//
+// Github Commit visual limits
+//
+
+// See http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+#commit-summary-input,
+#commit-description-textarea {
+  font-family: "Pragmata Pro Mono", monospace !important;
+}
+// add red block after 50 characters to show suggested limit
+#commit-summary-input {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0) 51ch, darkred 51ch) !important;
+}
+// add red block after 72 characters to show suggested limit
+#commit-description-textarea {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0) 73ch, darkred 73ch) !important;
+}
+
+//
+// GitHub Extended
+//
+
+label[for^="extended-option"] {
+  background: black !important;
+  border: 1px solid greenyellow !important;
+}
+label[for^="extended-option"] span {
+  display: none !important;
+}
+label[for^="extended-option"] {
+  padding: 0px 10px;
+}
+label[for="extended-option0"]:after {
+	content: '🙈';
+}
+label[for="extended-option1"]:after {
+	content: '🙊';
+}
+label[for="extended-option2"]:after {
+	content: '🙉';
+}
+label[for^="extended-option"].ui-state-active {
+  background: darkorange !important;
+}
+
+//
+// GitHub Highlight Selected
+//
+
+.ghs-highlight,
+.ghs-partial-highlight {
+  outline: 1px solid greenyellow !important;
+  background-color: darkgreen !important;
+}
+
+#ghs-bar {
+  border-left: 1px solid darkorange !important;
+  background-color: transparent !important;
+  left: 0 !important;
 }
 
