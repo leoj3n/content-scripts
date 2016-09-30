@@ -45,11 +45,17 @@ relative-time,
   color: greenyellow !important;
 }
 
+div.bg-white {
+  background: #181818 !important;
+}
+
 .file-wrap,
 .tabnav,
 .tabnav-tab.selected,
 ul.border-gray-light,
 div.border-gray-light,
+li.border-gray-dark,
+div.border-gray-dark,
 div.border-top,
 div.border-left,
 div.border-right,
@@ -68,8 +74,8 @@ div.border-bottom,
   background-color: #0073FF !important;
 }
 
-.ic-contributions-wrapper {
-  border: 1px solid greenyellow !important;
+.underline-nav-item.selected {
+  border-bottom-color: greenyellow !important;
 }
 
 .contributions-setting.right {
@@ -121,6 +127,9 @@ label[for="extended-option1"]:after {
 label[for="extended-option2"]:after {
 	content: '🙉';
 }
+label[for="extended-option3"]:after {
+	content: '🐒';
+}
 label[for^="extended-option"].ui-state-active {
   background: darkorange !important;
 }
@@ -143,6 +152,10 @@ body .octotree_github_sidebar .octotree_views .octotree_treeview .jstree-anchor 
 
 .octotree_treeview .jstree-icon.tree {
   filter: hue-rotate(100deg) brightness(80%) !important;
+}
+
+pre.CodeMirror-line {
+  background-color: azure !important;
 }
 
 //
