@@ -1,0 +1,17 @@
+/* Twitter */
+
+.gb_7a.gbii {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: spin 15s linear infinite;
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotateZ(0deg); }
+  to { -webkit-transform: rotateZ(360deg); }
+}
+
+.nH.Wg.aAr {
+  background: url(chrome-extension://__MSG_@@extension_id__/images/web@2x.png)
+    no-repeat white 100% -1px / 42.5px 46px !important;
+}
+

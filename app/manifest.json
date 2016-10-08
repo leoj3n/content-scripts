@@ -83,6 +83,10 @@
       "css": ["sites/google_search/app/assets/css/style.css"]
     },
     {
+      "matches": [ "*://mail.google.com/*" ],
+      "css": ["sites/mail_google/app/assets/css/style.css"]
+    },
+    {
       "matches": [ "*://developer.chrome.com/*" ],
       "css": ["sites/developer_chrome/app/assets/css/style.css"]
     },
